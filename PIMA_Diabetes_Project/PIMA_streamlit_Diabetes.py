@@ -97,7 +97,7 @@ with tab1:
 with tab2:
     st.link_button("View Dataset on Kaggle", "https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database")
     st.link_button("View My Resume", "https://drive.google.com/drive/folders/1IjjM7QQbBA47cJjmwVKybxutQEGCTDl2?usp=sharing")
-    st.link_button("View Project Code on GitHub", "")
+    st.link_button("View Project Code on GitHub", "https://github.com/concise-Sthita/PIMA-Indian-Diabetes-Dataset-Prediction-Model")
     st.link_button("View My LinkedIn", "https://www.linkedin.com/in/sthitapragyan-mahapatra/")
     st.header("About the Model")
     st.write("This web application provides a diabetes risk prediction based on a patient's health metrics. The prediction engine is powered by a deep learning model (ANN) and several traditional machine learning models for comparison.")
@@ -109,4 +109,5 @@ with tab2:
     st.write("2. **Overcoming Challenges**: A simple fix like mean imputation would have severely skewed the model, especially for the Insulin column where nearly half the values were missing. To handle the missing data more accurately, we used a **K-Nearest Neighbors (KNN) imputation** technique. This approach replaced missing values with a statistically plausible estimate based on the values of the most similar patients in the dataset. This allowed us to preserve the underlying relationships between features and avoid biasing the model.")
     st.image("Pregnancies_imputation_comparison.png","0 for Pregnancies is a valid data point,\nrepresenting a person who has had no pregnancies,\nIn contrast, a value of 0 for features like Glucose or BMI\nis biologically impossible and must be treated as a missing value")
     st.write("3. **Model Architecture**: We explored multiple algorithms for this task. Our deep learning model is an **Artificial Neural Network (ANN)** with two hidden layers and a **Dropout regularization** to prevent the model from overfitting. We also built and compared a **Random Forest Classifier** and a **Logistic Regression** model as a baseline. For a more robust comparison, we also implemented powerful gradient boosting algorithms like **XGBoost** and a **Support Vector Machine (SVM)** model.")
+
     st.write("4. **Results**: We chose the final models based on a comprehensive evaluation of metrics including Accuracy, Precision, Recall, F1-Score, and ROC-AUC. This confirmed that our imputation and model design choices led to a robust and reliable predictor.")
